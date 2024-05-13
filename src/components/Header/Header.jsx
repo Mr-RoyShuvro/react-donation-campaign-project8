@@ -32,9 +32,9 @@ const Header = () => {
                     </div>
                     <div className="text-center text-neutral-content pt-32">
                         <div className="">
-                            <h1 className="mb-5 text-5xl font-bold">I Grow By Helping People In Need</h1>
+                            <h1 className="mb-10 text-5xl font-bold">I Grow By Helping People In Need</h1>
                             <div className="join rounded-lg">
-                                <input className="input input-bordered join-item bg-white" placeholder="Search here...." />
+                                <input className="input input-bordered join-item bg-white w-96" placeholder="Search here...." />
                                 <button className="btn join-item bg-[#FF444A] hover:bg-red-600 border-none text-white font-semibold text-base">Search</button>
                             </div>
                         </div>
