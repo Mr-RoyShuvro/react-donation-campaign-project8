@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/pXbdwqF/Health1.png",
+      "title": "Yoga Mat & Accessories Set",
+      "category": "Health",
+      "category_bg": "#66cc99",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Elevate your yoga practice with this comprehensive mat and accessories set. Includes a premium yoga mat, blocks, strap, and carrying bag.",
+      "price": "$59.99"
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/Wvznzr7/Education1.png",
+      "title": "Educational Children's Book Set",
+      "category": "Education",
+      "category_bg": "#ff9966",
+      "card_bg": "#ffffff",
+      "text_bg": "#000000",
+      "button_bg": "#000000",
+      "description": "Inspire a love for learning with this engaging children's book set. Featuring colorful illustrations and interactive stories that encourage curiosity and imagination.",
+      "price": "$39.99"
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/WcQBSG8/Clothing1.png",
+      "title": "Casual Men's Hoodie",
+      "category": "Clothing",
+      "category_bg": "#666699",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Stay cozy and stylish with this versatile men's hoodie. Made from soft cotton blend fabric, it's perfect for everyday wear or lounging at home.",
+      "price": "$34.99"
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/6sLYZ3X/Food1.png",
+      "title": "Organic Fruit & Nut Snack Bars",
+      "category": "Food",
+      "category_bg": "#cc3333",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Fuel your body with these delicious organic fruit and nut snack bars. Packed with natural ingredients and nutrients, they're perfect for a quick and healthy energy boost.",
+      "price": "$19.99"
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/CzGvwVr/Health2.png",
+      "title": "Fitness Tracker Smartwatch",
+      "category": "Health",
+      "category_bg": "#3399cc",
+      "card_bg": "#ffffff",
+      "text_bg": "#000000",
+      "button_bg": "#000000",
+      "description": "Track your workouts and monitor your health with this advanced fitness tracker smartwatch. Features heart rate monitoring, activity tracking, and smartphone notifications.",
+      "price": "$129.99"
+    },
+    {
+      "id": 6,
+      "cover": "https://i.ibb.co/kgX0MHm/Education2.png",
+      "title": "Educational Wooden Puzzle Set",
+      "category": "Education",
+      "category_bg": "#cc6600",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Encourage cognitive development and problem-solving skills with this educational wooden puzzle set. Each puzzle features vibrant illustrations and durable construction.",
+      "price": "$24.99"
+    },
+    {
+      "id": 7,
+      "cover": "https://i.ibb.co/wpfL25w/Clothing2.png",
+      "title": "Classic Men's Oxford Shirt",
+      "category": "Clothing",
+      "category_bg": "#336699",
+      "card_bg": "#ffffff",
+      "text_bg": "#000000",
+      "button_bg": "#000000",
+      "description": "Upgrade your wardrobe with this timeless men's Oxford shirt. Crafted from premium cotton, it offers superior comfort and versatile style for any occasion.",
+      "price": "$49.99"
+    },
+    {
+      "id": 8,
+      "cover": "https://i.ibb.co/7V718K9/Food2.png",
+      "title": "Organic Super food Smoothie Mix",
+      "category": "Food",
+      "category_bg": "#99cc66",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Boost your nutrition with this organic superfood smoothie mix. Packed with antioxidants, vitamins, and minerals, it's an easy and delicious way to support your health.",
+      "price": "$29.99"
+    },
+    {
+      "id": 9,
+      "cover": "https://i.ibb.co/094Vh4Z/clothing3.png",
+      "title": "Women's Yoga Leggings",
+      "category": "Clothing",
+      "category_bg": "#ff6699",
+      "card_bg": "#ffffff",
+      "text_bg": "#000000",
+      "button_bg": "#000000",
+      "description": "Move freely and comfortably in these high-performance women's yoga leggings. Made from moisture-wicking fabric with four-way stretch, they provide support and flexibility for any pose.",
+      "price": "$39.99"
+    },
+    {
+      "id": 10,
+      "cover": "https://i.ibb.co/cwmPQkh/Education3.png",
+      "title": "Educational STEM Building Blocks",
+      "category": "Education",
+      "category_bg": "#cc6600",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Inspire creativity and problem-solving skills with these educational STEM building blocks. Features colorful pieces and interchangeable parts for endless construction possibilities.",
+      "price": "$49.99"
+    },
+    {
+      "id": 11,
+      "cover": "https://i.ibb.co/pdSbWgW/Food3.png",
+      "title": "Organic Quinoa & Kale Salad Mix",
+      "category": "Food",
+      "category_bg": "#99cc66",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Enjoy a nutritious and delicious meal with this organic quinoa and kale salad mix. Packed with protein, fiber, and vitamins, it's a satisfying choice for lunch or dinner.",
+      "price": "$9.99"
+    },
+    {
+      "id": 12,
+      "cover": "https://i.ibb.co/094Vh4Z/clothing3.png",
+      "title": "Men's Performance Running Shoes",
+      "category": "Clothing",
+      "category_bg": "#336699",
+      "card_bg": "#f4f4f4",
+      "text_bg": "#333333",
+      "button_bg": "#333333",
+      "description": "Achieve your fitness goals with these men's performance running shoes. Lightweight and breathable, they provide comfort and support for your daily runs.",
+      "price": "$79.99"
+    }
+  ]
+  
