@@ -12,7 +12,7 @@ const Header = () => {
         <div>
             <div className="min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/821dhx2/banner.jpg)', backgroundRepeat: "no-repeat", height: '100%', backgroundPosition: 'center', backgroundSize: 'cover' }}>
                 <div className="hero-overlay bg-opacity-60 min-h-screen">
-                    <div className="navbar">
+                    <div className="navbar max-w-7xl mx-auto">
                         <div className="navbar-start">
                             <div className="dropdown">
                                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
