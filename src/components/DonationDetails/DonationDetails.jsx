@@ -1,13 +1,15 @@
 import { useLoaderData, useParams } from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const DonationDetails = () => {
     const donations = useLoaderData();
     const { id } = useParams();
-    const donation = donations.find(donation => donation.id === parseInt(id))
-    console.log(donation);
+    const donation = donations.find(donation => donation.id === parseInt(id));
+
 
 
     const links = <>
@@ -16,6 +18,10 @@ const DonationDetails = () => {
         <li><NavLink to='/statistics'>Statistics</NavLink></li>
     </>
 
+
+    const handleDonateBtn = () => {
+        toast.success("You have donated successfully!")
+    }
 
 
     return (
@@ -41,13 +47,25 @@ const DonationDetails = () => {
             {/* Nav end  */}
             <div className="flex items-end justify-end min-h-screen bg-cover bg-no-repeat mt-14" style={{ backgroundImage: `url(${donation.cover})` }}>
                 <div className=" hero-overlay bg-opacity-60 w-full py-7 pl-2">
-                    <button className={`btn bg-[${donation.text_bg}] text-white rounded text-xl font-semibold`}>Donate {donation.price}</button>
+                    <button onClick={handleDonateBtn} className={`btn bg-[${donation.text_bg}] text-white rounded text-xl font-semibold`}>Donate {donation.price}</button>
                 </div>
             </div>
             <div>
                 <h3 className="text-5xl font-bold pt-14">{donation.title}</h3>
                 <p className="text-lg font-normal pt-6 pb-20">{donation.description}</p>
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+                transition:Flip/>
         </div>
     );
 };
