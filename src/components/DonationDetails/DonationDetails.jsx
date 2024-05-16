@@ -3,23 +3,23 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveDonation } from "../../utility/localStorage";
 
 
 const DonationDetails = () => {
+
+    const links = <>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to="/donation">Donation</NavLink></li>
+        <li><NavLink to='/statistics'>Statistics</NavLink></li>
+    </>
+
     const donations = useLoaderData();
     const { id } = useParams();
     const donation = donations.find(donation => donation.id === parseInt(id));
 
-
-
-    const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/donation'>Donation</NavLink></li>
-        <li><NavLink to='/statistics'>Statistics</NavLink></li>
-    </>
-
-
     const handleDonateBtn = () => {
+        saveDonation(parseInt(id));
         toast.success("You have donated successfully!")
     }
 
@@ -65,7 +65,7 @@ const DonationDetails = () => {
                 draggable
                 pauseOnHover
                 theme="colored"
-                transition:Flip/>
+                transition:Flip />
         </div>
     );
 };

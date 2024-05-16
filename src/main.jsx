@@ -9,10 +9,10 @@ import {
 import './index.css'
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
-import Donation from './components/ShowDonation/ShowDonation';
 import Statistics from './components/Statistics/Statistics';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import DonationDetails from './components/DonationDetails/DonationDetails';
+import GivenDonation from './components/GivenDonation/GivenDonation';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +26,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/donation",
-        element: <Donation></Donation>
+        element: <GivenDonation></GivenDonation>,
+        loader: ()=> fetch('/donation.json')
       },
       {
         path: "/statistics",
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: "/donation/:id",
         element: <DonationDetails></DonationDetails>,
-        loader: ()=> fetch('donation.json')
+        loader: ()=> fetch('/donation.json')
       }
     ]
   },
