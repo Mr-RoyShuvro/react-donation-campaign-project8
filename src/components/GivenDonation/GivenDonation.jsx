@@ -48,6 +48,9 @@ const GivenDonation = () => {
                     givenDonation.map(donation => <Donate key={donation.id} donation={donation}></Donate>)
                 }
             </div>
+            <div className="flex justify-center pb-20">
+                <button className="btn px-8 py-2 rounded-lg bg-[#009444] hover:bg-green-700 text-lg font-semibold text-white">See All</button>
+            </div>
         </div>
     );
 };
