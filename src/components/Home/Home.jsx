@@ -1,11 +1,14 @@
-import ShowDonation from "../ShowDonations/ShowDonations";
+import Header from "../Header/Header";
+import ShowDonations from "../ShowDonations/ShowDonations";
 
 
 const Home = () => {
     return (
         <div>
-            <h3>This is Home</h3>
-            <ShowDonation></ShowDonation>
+            <Header></Header>
+            <div className="max-w-7xl mx-auto">
+                <ShowDonations></ShowDonations>
+            </div>
         </div>
     );
 };
