@@ -13,6 +13,7 @@ const GivenDonation = () => {
     const donations = useLoaderData()
 
     const [givenDonation, setGivenDonation] = useState([]);
+    const [dataLength, setDataLength] = useState(4);
 
     useEffect(() => {
         const storedDonationsId = getStoredDonation();
@@ -21,6 +22,10 @@ const GivenDonation = () => {
             setGivenDonation(donationGiven);
         }
     }, [])
+
+    const handleSeeAllBtn = () => {
+        setDataLength(givenDonation.length);
+    }
 
     return (
         <div>
@@ -45,11 +50,13 @@ const GivenDonation = () => {
             {/* Nav end  */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto py-16">
                 {
-                    givenDonation.map(donation => <Donate key={donation.id} donation={donation}></Donate>)
+                    givenDonation.slice(0, dataLength).map(donation => <Donate key={donation.id} donation={donation}></Donate>)
                 }
             </div>
-            <div className="flex justify-center pb-20">
-                <button className="btn px-8 py-2 rounded-lg bg-[#009444] hover:bg-green-700 text-lg font-semibold text-white">See All</button>
+            <div className={dataLength === givenDonation.length && 'hidden'}>
+                <div onClick={handleSeeAllBtn} className="flex justify-center pb-20">
+                    <button className="btn px-8 py-2 rounded-lg bg-[#009444] hover:bg-green-700 text-lg font-semibold text-white">See All</button>
+                </div>
             </div>
         </div>
     );

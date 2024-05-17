@@ -14,7 +14,7 @@ const Donate = ({ donation }) => {
                     <h2 className={`text-2xl font-semibold text-black ]`}>{title}</h2>
                     <h3 className={`text-[${text_bg} text-base font-semibold `}>{price}</h3>
                     <div className="card-actions justify-start">
-                        <Link to={`/donation/${id}`}><button className={`btn rounded border-none text-lg font-semibold bg-[${text_bg}] text-white px-4 py-2 rounded`}>View Details</button></Link>
+                        <Link to={`/donation/${id}`}><button className={`btn rounded border-none text-lg font-semibold bg-[${text_bg}] text-white px-4 py-1 rounded`}>View Details</button></Link>
                     </div>
                 </div>
             </div>
