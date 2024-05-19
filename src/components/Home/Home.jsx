@@ -39,6 +39,9 @@ const handleSearchBtn = () =>{
         const food = donations.filter(donation => donation.category === 'Food');
         setDisplayDonations(food);
     }
+    else{
+        alert('Please search the correct category!')
+    }
 }
 
 

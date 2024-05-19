@@ -2,25 +2,26 @@ import { useEffect } from "react";
 import ShowDonation from "../ShowDonation/ShowDonation";
 
 
-const ShowDonations = ({displayDonations, setDonations, setDisplayDonations }) => {
+const ShowDonations = ({ displayDonations, setDonations, setDisplayDonations }) => {
 
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('donation.json')
-        .then(res => res.json(res))
-        .then(data => {
-            setDonations(data);
-            setDisplayDonations(data);
-        })
-    },[])
+            .then(res => res.json(res))
+            .then(data => {
+                setDonations(data);
+                setDisplayDonations(data);
+            })
+    }, [])
 
     return (
-        <div className="my-24">
-            <h3 ></h3>
-            <marquee className="text-center font-bold text-3xl py-5 text-red-600" direction="right">Stand Together, Stand Strong</marquee>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="mb-24 mt-16">
+            {/* <div className="bg-gradient-to-r from-red-500 to-yellow-500 rounded-lg">
+                <marquee className="text-center font-bold text-black text-3xl py-5 " direction="right">Stand Together, Stand Strong</marquee>
+            </div> */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 ">
                 {
-                    displayDonations.map(donation=><ShowDonation key={donation.id} donation={donation}></ShowDonation>)
+                    displayDonations.map(donation => <ShowDonation key={donation.id} donation={donation}></ShowDonation>)
                 }
             </div>
         </div>
